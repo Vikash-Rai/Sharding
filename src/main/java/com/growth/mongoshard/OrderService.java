@@ -8,8 +8,11 @@ import java.util.List;
 @Service
 public class OrderService {
 
-    @Autowired
-    private OrderRepository orderRepository;
+    private final OrderRepository orderRepository;
+
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
 
     public List<Order> getAllOrders() {
         return orderRepository.findAll();
@@ -17,6 +20,9 @@ public class OrderService {
 
     public Order placeOrder(Order order) {
         return orderRepository.save(order);
+    }
+    public List<Order> findCustomer(String customerId) {
+        return orderRepository.findByCustomerId(customerId);
     }
 }
 
