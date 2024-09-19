@@ -38,3 +38,13 @@ sh.getBalancerState()
 // Get the sharding status
 sh.status()
 
+// Insert data into 'orders' collection
+db.orders.insertMany([
+  { "id": "1", "customerId": 50, "coffeeType": "Espresso", "quantity": 3 },
+  { "id": "2", "customerId": 100, "coffeeType": "Latte", "quantity": 2 },
+  { "id": "3", "customerId": 150, "coffeeType": "Mocha", "quantity": 1 },
+  { "id": "4", "customerId": 200, "coffeeType": "Cappuccino", "quantity": 4 },
+  { "id": "5", "customerId": 250, "coffeeType": "Black Coffee", "quantity": 5 }
+])
+
+
