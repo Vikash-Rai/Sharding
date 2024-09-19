@@ -6,10 +6,10 @@ This document outlines the steps to set up sharding in MongoDB.
 
 ```javascript
 // Add the first shard
-sh.addShard("shard1ReplSet/localhost:28018")
+sh.addShard("shard1ReplSet/localhost:27018")
 
 // Add the second shard
-sh.addShard("shard2ReplSet/localhost:28017")
+sh.addShard("shard2ReplSet/localhost:27017")
 
 // Switch to the desired database
 use coffeeShop
