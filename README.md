@@ -4,7 +4,7 @@ This document outlines the steps to set up sharding in MongoDB.
 
 ## Setting up and Adding Shards
 
-```javascript
+```bash
 // Create directories for your config server
 mkdir -p /data/configdb
 
