@@ -7,6 +7,7 @@ import java.util.List;
 
 @Service
 public class OrderService {
+    //The sharding logic is handled by MongoDB at the database level, and the application code remains the same.
 
     private final OrderRepository orderRepository;
 
