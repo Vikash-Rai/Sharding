@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Order {
     @Id
     private String id;
-    private String customerId;// Used as shard key for both hashed and zone sharding
+    private String customerId;// Used as shard key for range, hashed and zone sharding. Please refer readme how it can be used.
     private String coffeeType;
     private int quantity;
 }
