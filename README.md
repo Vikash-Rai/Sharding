@@ -55,6 +55,8 @@ sh.enableSharding("coffeeShop")
 // Shard the 'orders' collection on the 'customerId' field
 sh.shardCollection("coffeeShop.orders", { "customerId": 1 })
 
+## You can choose any of the sharding techniques below. In the blog, we have used range-based sharding as an example.
+
 ## 1. For Range sharding
 // Split the collection at a specific value
 sh.splitAt("coffeeShop.orders", { "customerId": 100 })
