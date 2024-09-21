@@ -21,6 +21,8 @@ public class OrderService {
     public Order placeOrder(Order order) {
         return orderRepository.save(order);
     }
+    
+    // Get orders by customerId (shard key)
     public List<Order> findCustomer(String customerId) {
         return orderRepository.findByCustomerId(customerId);
     }
