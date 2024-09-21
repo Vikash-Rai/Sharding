@@ -84,7 +84,6 @@ sh.addShardTag("shard2ReplSet", "ZoneB");
 sh.updateZoneKeyRange("coffeeShop.orders", { "customerId": MinKey }, { "customerId": 5000 }, "ZoneA");
 sh.updateZoneKeyRange("coffeeShop.orders", { "customerId": 5000 }, { "customerId": MaxKey }, "ZoneB");
 
-## We are using shar
 // Get shard distribution
 db.orders.getShardDistribution()
 
